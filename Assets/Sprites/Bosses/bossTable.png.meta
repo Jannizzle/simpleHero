@@ -1,0 +1,571 @@
+fileFormatVersion: 2
+guid: 7d2a0afbc0c27d14aab88880245505f5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bossTable
+    21300002: bossTable_0
+    21300004: bossTable_1
+    21300006: bossTable_2
+    21300008: bossTable_3
+    21300010: bossTable_4
+    21300012: bossTable_5
+    21300014: bossTable_6
+    21300016: bossTable_7
+    21300018: bossTable_8
+    21300020: bossTable_9
+    21300022: bossTable_10
+    21300024: bossTable_11
+    21300026: bossTable_12
+    21300028: bossTable_13
+    21300030: bossTable_14
+    21300032: bossTable_15
+    21300034: bossTable_16
+    21300036: bossTable_17
+    21300038: bossTable_18
+    21300040: bossTable_19
+    21300042: bossTable_20
+    21300044: bossTable_21
+    21300046: bossTable_22
+    21300048: bossTable_23
+    21300050: bossTable_24
+    21300052: bossTable_25
+    21300054: bossTable_26
+    21300056: bossTable_27
+    21300058: bossTable_28
+    21300060: bossTable_29
+    21300062: bossTable_30
+    21300064: bossTable_31
+    21300066: bossTable_32
+    21300068: bossTable_33
+    21300070: bossTable_34
+    21300072: bossTable_35
+    21300074: bossTable_36
+    21300076: bossTable_37
+    21300078: bossTable_38
+    21300080: bossTable_39
+    21300082: bossTable_40
+    21300084: bossTable_41
+    21300086: bossTable_42
+    21300088: bossTable_43
+    21300090: bossTable_44
+    21300092: bossTable_45
+    21300094: bossTable_46
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bossTable_0
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2971
+        width: 158
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_1
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 2971
+        width: 158
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_2
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2971
+        width: 158
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 2689
+        width: 151
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_4
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 2667
+        width: 142
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_5
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 2651
+        width: 149
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2651
+        width: 145
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_7
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 2651
+        width: 253
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_8
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 2658
+        width: 246
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_9
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 2661
+        width: 237
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_10
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 2667
+        width: 233
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_11
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 2519
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_12
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 2538
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_13
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2402
+        width: 237
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_14
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 2395
+        width: 237
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_15
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 2522
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_16
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 2515
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_17
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 2376
+        width: 237
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_18
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 2383
+        width: 234
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_19
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 2373
+        width: 237
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_20
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2158
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_21
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2130
+        width: 139
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_22
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 2136
+        width: 139
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_23
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 2133
+        width: 143
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_24
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 2139
+        width: 135
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_25
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 2070
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_26
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 2079
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_27
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 2070
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_28
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1934
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_29
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 2060
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_30
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 1934
+        width: 130
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_31
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1930
+        width: 142
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_32
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 1930
+        width: 228
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_33
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1716
+        width: 307
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_34
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1728
+        width: 366
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_35
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 1738
+        width: 392
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_36
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1735
+        width: 408
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_37
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 1156
+        width: 151
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_38
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 884
+        width: 155
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_39
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 868
+        width: 155
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_40
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 713
+        width: 158
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_41
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 697
+        width: 158
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_42
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 659
+        width: 154
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_43
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 666
+        width: 148
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_44
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 666
+        width: 143
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_45
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 438
+        width: 142
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bossTable_46
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 394
+        width: 143
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
