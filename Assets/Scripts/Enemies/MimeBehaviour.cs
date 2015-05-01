@@ -41,6 +41,7 @@ public class MimeBehaviour : MonoBehaviour
 
     public void DestroyThis()
     {
+		transform.GetChild(0).position = transform.position;
         gameObject.SetActive(false);
     }
 }

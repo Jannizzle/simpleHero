@@ -23,18 +23,17 @@ public class MyGUI : MonoBehaviour
 	float rawSec;
 	int min;
 	int sec;
+	public GameObject pauseText;
 
 	void Start ()
 	{
 		hero = GameObject.Find ("NewHero").GetComponent<HeroManager> ();
 		scale = 1.0f;
 		orignalSize = hpFull.rectTransform.localScale.x;
-		updateHP(hero.getHp());
+		//updateHP (hero.getHp ());
 		//hpPos = new Vector2 (Screen.width / 8, Screen.width / 8);
 		//	hpSize = new Vector2 (Screen.width / 2, Screen.width / 16);
 		cll = GetComponent<LevelManager> ();
-
-
 
 	}
 
@@ -46,6 +45,12 @@ public class MyGUI : MonoBehaviour
 		min = (int)rawSec / 60;
 		sec = (int)rawSec % 60;
 		clockText.text = string.Format ("{0:00}:{1:00}", min, sec);
+
+		if (StateManager.gamePaused) {
+			pauseText.SetActive (true);
+		} else if (pauseText.activeInHierarchy) {
+			pauseText.SetActive (false);
+		}
 
 
 	}
@@ -76,8 +81,7 @@ public class MyGUI : MonoBehaviour
 	public void updateHP (int value)
 	{
 		scale = (float)value / (float)hero.getMaxHp ();
-		Debug.Log(scale);
-		hpValue.text = "" + hero.getHp () + "/" + hero.getMaxHp ();
+		hpValue.text = "" + value + "/" + hero.getMaxHp ();
 		hpFull.rectTransform.localScale = new Vector3 (orignalSize * scale, hpFull.rectTransform.localScale.y, 1.0f);
 	}
 

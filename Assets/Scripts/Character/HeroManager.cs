@@ -8,13 +8,17 @@ public class HeroManager : MonoBehaviour
 	public int maxHp;
 	MyGUI gui;
 	public static bool invincible;
+	Animator animator;
+	Transform child;
 
 	// Use this for initialization
 	void Start ()
 	{
 		gui = GameObject.Find ("MainCamera").GetComponent<MyGUI> ();
 		hp = maxHp;
-		//gui.updateHP (hp);
+		animator = gameObject.GetComponentInChildren<Animator>();
+		child = transform.FindChild("Hero");
+		gui.updateHP (hp);
 	}
 
 	public void setHp (int value)
@@ -46,6 +50,11 @@ public class HeroManager : MonoBehaviour
 			hp = maxHp;
 		}
 		gui.updateHP (hp);
+	}
+
+	public void Death(){
+		gameObject.SetActive (false);
+		child.position = transform.position;
 	}
 
 	public void Respawn ()

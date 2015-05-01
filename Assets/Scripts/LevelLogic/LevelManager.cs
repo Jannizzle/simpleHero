@@ -84,7 +84,6 @@ public class LevelManager : MonoBehaviour
 	//MusicManager
 	MusicManager am;
 
-
 	// Use this for initialization
 	void Start ()
 	{
@@ -154,6 +153,11 @@ public class LevelManager : MonoBehaviour
 		boss2Spawned = false;
 		boss3Spawned = false;
 
+
+
+
+		//StateManager.PauseGame ();
+	
 	}
 
 
@@ -161,6 +165,7 @@ public class LevelManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+
 		IntervallSpawnAll ();
 		ManageLevels ();
 		//DEBUG
@@ -168,19 +173,18 @@ public class LevelManager : MonoBehaviour
 			currentLevel++;
 		}
 		if (Input.GetKeyDown ("o")) {
-			StateManager.PauseGame();
+
+			StateManager.PauseGame ();
 		}
 
 	}
-
-
 
 	void ManageLevels ()
 	{
 		int score = tracker.getCurrentKillCount ();
 
 		if (score >= threshold) {
-			//currentLevel++;
+			currentLevel++;
 			threshold = threshold + currentLevel + 1;
 			tracker.setThreshold (threshold);
 		}
@@ -188,13 +192,13 @@ public class LevelManager : MonoBehaviour
 
 		switch (currentLevel) {
 		case 1:
-			//villainRate = 2;
+			villainRate = 2;
 			shooterRate = 0;
 			guardianRate = 0;
 			bulletRate = 0;
 			aimerRate = 0;
 			shadowRate = 0;
-			mimeRate = 2;
+			mimeRate = 0;
 			sniperRate = 0;
 			tracker.setLevel (currentLevel);
 
@@ -688,7 +692,7 @@ public class LevelManager : MonoBehaviour
 			sniperRate = 0;
             //bossTime
 			SpawnBoss (boss2);
-
+			am.playTrack (666);
 
 			tracker.setLevel (currentLevel);
 			break;
@@ -702,7 +706,7 @@ public class LevelManager : MonoBehaviour
 			shadowRate = 0;
 			mimeRate = 0;
 			sniperRate = 0;
-			
+			am.playTrack (1);
 			tracker.setLevel (currentLevel);
 			break;
 		case 42:
@@ -931,7 +935,7 @@ public class LevelManager : MonoBehaviour
 			shadowRate = 0;
 			mimeRate = 0;
 			sniperRate = 0;
-
+			am.playTrack (666);
 			SpawnBoss (boss3);
 			
 			tracker.setLevel (currentLevel);

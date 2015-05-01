@@ -124,8 +124,6 @@ public class CollisionBehaviour : MonoBehaviour
 
 			if (animator.GetCurrentAnimatorStateInfo (0).IsName ("Punch")) {
 				KillEnemy (other);
-				//TESTING DEBUG
-				Debug.Log (hero.getHp ());
 			} else if (!HeroManager.invincible && !recovering) {
 				other.SendMessage ("DestroyThis", SendMessageOptions.DontRequireReceiver);
 				receiveDamage (villainDmg, false);
@@ -277,7 +275,7 @@ public class CollisionBehaviour : MonoBehaviour
 	{
 		if (hero.getHp () <= 0.01) {
 
-			this.transform.parent.gameObject.SetActive (false);
+			hero.Death ();
 			StateManager.dead = true;
 
 			DestroyAllX ("Boss");

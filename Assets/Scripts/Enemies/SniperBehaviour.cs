@@ -43,7 +43,7 @@ public class SniperBehaviour : MonoBehaviour
 
 	}
 
-	void onEnable ()
+	void OnEnable ()
 	{   
 		shotCounter = 0;
 		waitcounter = 0;

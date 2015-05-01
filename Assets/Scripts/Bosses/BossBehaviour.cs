@@ -25,7 +25,7 @@ public class BossBehaviour : MonoBehaviour
 	void Update ()
 	{
 
-		if (transform.position.x > 4.0f) {
+		if (transform.position.x > 5.0f) {
 			transform.Translate (Vector3.left * bossSpeed * Time.deltaTime);
 		} else {
 

@@ -4,15 +4,16 @@ using System.Collections;
 public class HeroAnimationHelper : MonoBehaviour
 {
 
-    MovementController parent;
+	MovementController parent;
 
-    void Start()
-    {
-        parent = gameObject.GetComponentInParent<MovementController>();
-    }
+	void Start ()
+	{
+		parent = gameObject.GetComponentInParent<MovementController> ();
+	}
 
-    void endAttack()
-    {
-        parent.endAttack();
-    }
+	void endAttack ()
+	{
+		parent.endAttack ();
+	}
+
 }

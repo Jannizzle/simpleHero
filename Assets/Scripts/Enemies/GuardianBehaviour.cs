@@ -60,7 +60,7 @@ public class GuardianBehaviour : MonoBehaviour
 		public void DestroyThis ()
 		{
 				inRoutine = false;
-				
+				transform.GetChild(0).position = transform.position;
 				
 				gameObject.SetActive (false);
 		}
