@@ -6,7 +6,7 @@ public class AimerBehaviour : MonoBehaviour
 
 
     GameObject player;
-    int framecount;
+    public int framecount;
     public int chargingTime;
     public float movementSpeedV;
     public float movementSpeedH;
@@ -22,11 +22,7 @@ public class AimerBehaviour : MonoBehaviour
         framecount = 0;
 
     }
-
-    void onEnable()
-    {
-        framecount = 0;
-    }
+	
 
     // Update is called once per frame
     void Update()
@@ -63,6 +59,7 @@ public class AimerBehaviour : MonoBehaviour
 
     void DestroyThis()
     {
+		framecount = 0;
         gameObject.SetActive(false);
     }
 }

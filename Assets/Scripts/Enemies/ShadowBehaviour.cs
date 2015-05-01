@@ -16,7 +16,7 @@ public class ShadowBehaviour : MonoBehaviour
         gameObject.GetComponent<Renderer>().material.color = cloaked;
     }
 
-    void onEnable()
+    void OnEnable()
     {
 		gameObject.GetComponent<Renderer>().material.color = cloaked;
     }

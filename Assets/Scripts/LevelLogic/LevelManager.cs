@@ -180,7 +180,7 @@ public class LevelManager : MonoBehaviour
 		int score = tracker.getCurrentKillCount ();
 
 		if (score >= threshold) {
-			currentLevel++;
+			//currentLevel++;
 			threshold = threshold + currentLevel + 1;
 			tracker.setThreshold (threshold);
 		}
@@ -188,13 +188,13 @@ public class LevelManager : MonoBehaviour
 
 		switch (currentLevel) {
 		case 1:
-			villainRate = 2;
+			//villainRate = 2;
 			shooterRate = 0;
 			guardianRate = 0;
 			bulletRate = 0;
 			aimerRate = 0;
 			shadowRate = 0;
-			mimeRate = 0;
+			mimeRate = 2;
 			sniperRate = 0;
 			tracker.setLevel (currentLevel);
 
