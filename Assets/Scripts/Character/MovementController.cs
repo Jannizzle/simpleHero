@@ -37,12 +37,12 @@ public class MovementController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown("s"))
+        if (Input.GetKeyDown("s") && !StateManager.gamePaused)
         {
             Attack();
         }
 
-        if (Input.GetKey("p"))
+		if (Input.GetKey("p") && !StateManager.gamePaused)
         {
             Ascend();
         }
