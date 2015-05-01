@@ -12,7 +12,7 @@ public class MyGUI : MonoBehaviour
 	bool stopped;
 	Vector2 hpPos;
 	Vector2 hpSize;
-	float scale;
+	float scale = 1.0f;
 	public Image hpEmpty;
 	public Image hpFull;
 	public Text hpValue;
@@ -28,8 +28,9 @@ public class MyGUI : MonoBehaviour
 	void Start ()
 	{
 		hero = GameObject.Find ("NewHero").GetComponent<HeroManager> ();
-		scale = 1.0f;
 		orignalSize = hpFull.rectTransform.localScale.x;
+		//scale = 1.0f;
+
 		//updateHP (hero.getHp ());
 		//hpPos = new Vector2 (Screen.width / 8, Screen.width / 8);
 		//	hpSize = new Vector2 (Screen.width / 2, Screen.width / 16);
@@ -78,11 +79,16 @@ public class MyGUI : MonoBehaviour
 	
 	}
 
-	public void updateHP (int value)
+	public void updateHP (int value, int max)
 	{
-		scale = (float)value / (float)hero.getMaxHp ();
-		hpValue.text = "" + value + "/" + hero.getMaxHp ();
+		if (orignalSize == 0) {
+			orignalSize = hpFull.rectTransform.localScale.x;
+		}
+		Debug.Log (scale);
+		scale = (float)value / (float)max;
+		hpValue.text = "" + value + "/" + max;
 		hpFull.rectTransform.localScale = new Vector3 (orignalSize * scale, hpFull.rectTransform.localScale.y, 1.0f);
+
 	}
 
 	public void ToggleMusic ()

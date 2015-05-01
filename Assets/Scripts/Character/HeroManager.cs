@@ -16,15 +16,16 @@ public class HeroManager : MonoBehaviour
 	{
 		gui = GameObject.Find ("MainCamera").GetComponent<MyGUI> ();
 		hp = maxHp;
-		animator = gameObject.GetComponentInChildren<Animator>();
-		child = transform.FindChild("Hero");
-		gui.updateHP (hp);
+		gui.updateHP (hp, maxHp);
+		animator = gameObject.GetComponentInChildren<Animator> ();
+		child = transform.FindChild ("Hero");
+
 	}
 
 	public void setHp (int value)
 	{
 		hp = value;
-		gui.updateHP (hp);
+		gui.updateHP (hp, maxHp);
 	}
 
 	public int getHp ()
@@ -40,7 +41,7 @@ public class HeroManager : MonoBehaviour
 	public void receiveDamage (int dmg)
 	{
 		hp -= dmg;
-		gui.updateHP (hp);
+		gui.updateHP (hp, maxHp);
 	}
 
 	public void AddHealth (int amount)
@@ -49,10 +50,11 @@ public class HeroManager : MonoBehaviour
 		if (hp > maxHp) {
 			hp = maxHp;
 		}
-		gui.updateHP (hp);
+		gui.updateHP (hp, maxHp);
 	}
 
-	public void Death(){
+	public void Death ()
+	{
 		gameObject.SetActive (false);
 		child.position = transform.position;
 	}
@@ -63,7 +65,7 @@ public class HeroManager : MonoBehaviour
 		gameObject.transform.position = new Vector3 (-10, 0, 0);
 		gameObject.SetActive (true);
 		hp = maxHp;
-		gui.updateHP (hp);
+		gui.updateHP (hp, maxHp);
 	}
 
 }

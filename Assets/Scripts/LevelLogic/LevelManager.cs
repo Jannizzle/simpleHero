@@ -154,9 +154,7 @@ public class LevelManager : MonoBehaviour
 		boss3Spawned = false;
 
 
-
-
-		//StateManager.PauseGame ();
+		StateManager.PauseGame ();
 	
 	}
 
