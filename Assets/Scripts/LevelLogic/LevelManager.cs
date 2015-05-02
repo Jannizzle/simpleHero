@@ -170,7 +170,7 @@ public class LevelManager : MonoBehaviour
 		if (Input.GetKeyDown ("q")) {
 			currentLevel++;
 		}
-		if (Input.GetKeyDown ("o")) {
+		if (Input.GetKeyDown ("o") || Input.GetKeyDown(KeyCode.Escape)) {
 
 			StateManager.PauseGame ();
 		}
