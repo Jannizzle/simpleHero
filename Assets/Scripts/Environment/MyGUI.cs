@@ -84,7 +84,6 @@ public class MyGUI : MonoBehaviour
 		if (orignalSize == 0) {
 			orignalSize = hpFull.rectTransform.localScale.x;
 		}
-		Debug.Log (scale);
 		scale = (float)value / (float)max;
 		hpValue.text = "" + value + "/" + max;
 		hpFull.rectTransform.localScale = new Vector3 (orignalSize * scale, hpFull.rectTransform.localScale.y, 1.0f);

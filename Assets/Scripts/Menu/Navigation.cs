@@ -10,7 +10,7 @@ public class Navigation : MonoBehaviour {
 			Application.LoadLevel(0);
 			break;
 		case "level1":
-			Application.LoadLevel(1);
+			Application.LoadLevel(3);
 			break;
 		case "shop":
 			Application.LoadLevel(2);
