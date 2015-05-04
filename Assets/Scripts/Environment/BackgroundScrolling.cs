@@ -11,7 +11,7 @@ public class BackgroundScrolling : MonoBehaviour
 		void Update ()
 		{
 				
-				GetComponent<Renderer>().material.mainTextureOffset = new Vector2 (Time.time * scrollSpeed, 0f);
+				//GetComponent<Renderer>().material.mainTextureOffset = new Vector2 (Time.time * scrollSpeed, 0f);
 				
 		}
 

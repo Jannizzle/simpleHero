@@ -205,7 +205,7 @@ public class LevelManager : MonoBehaviour
 			break;
 
 		case 2:
-			villainRate = 1.8f;
+			villainRate = 1.5f;
 			shooterRate = 0;
 			guardianRate = 0;
 			bulletRate = 0;
