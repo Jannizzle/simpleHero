@@ -53,15 +53,24 @@ public class ScoreTracking : MonoBehaviour
 	public void riseMultiplier ()
 	{
 		multiplier += 0.1f;
-//		if (multiplier >= 2.0f) {
-//			pm.setFactorInChildren(1.5f);
-//		}
+		if (multiplier >= 1.2f && multiplier < 1.4f) {
+			pm.TellChildren (1.5f);
+		}
+		if (multiplier >= 1.4f && multiplier < 1.6f) {
+			pm.TellChildren (2.0f);
+		}
+		if (multiplier >= 1.6f && multiplier < 1.8f) {
+			pm.TellChildren (2.5f);
+		}
+		if (multiplier >= 1.8f && multiplier < 2.0f) {
+			pm.TellChildren (3.0f);
+		}
 	}
 
 	public void resetMultiplier ()
 	{
 		multiplier = 1.0f;
-		pm.setFactorInChildren(1);
+		pm.TellChildren (1.0f);
 	}
 
 	public void setScore (int value)
