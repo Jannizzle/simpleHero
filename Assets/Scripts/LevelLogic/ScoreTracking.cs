@@ -54,15 +54,33 @@ public class ScoreTracking : MonoBehaviour
 	{
 		multiplier += 0.1f;
 		if (multiplier >= 1.2f && multiplier < 1.4f) {
-			pm.TellChildren (1.5f);
+			pm.TellChildren (1.2f);
 		}
 		if (multiplier >= 1.4f && multiplier < 1.6f) {
-			pm.TellChildren (2.0f);
+			pm.TellChildren (1.4f);
 		}
 		if (multiplier >= 1.6f && multiplier < 1.8f) {
-			pm.TellChildren (2.5f);
+			pm.TellChildren (1.6f);
 		}
 		if (multiplier >= 1.8f && multiplier < 2.0f) {
+			pm.TellChildren (1.8f);
+		}
+		if (multiplier >= 2.0f && multiplier < 2.2f) {
+			pm.TellChildren (2.0f);
+		}
+		if (multiplier >= 2.2f && multiplier < 2.4f) {
+			pm.TellChildren (2.2f);
+		}
+		if (multiplier >= 2.4f && multiplier < 2.6f) {
+			pm.TellChildren (2.4f);
+		}
+		if (multiplier >= 2.6f && multiplier < 2.8f) {
+			pm.TellChildren (2.6f);
+		}
+		if (multiplier >= 2.8f && multiplier < 3.0f) {
+			pm.TellChildren (2.8f);
+		}
+		if (multiplier >= 3.0f && multiplier < 5.0f) {
 			pm.TellChildren (3.0f);
 		}
 	}
@@ -112,6 +130,7 @@ public class ScoreTracking : MonoBehaviour
 	public void setThreshold (int value)
 	{
 		threshold = value;
+		killCount = 0;
 	}
 
 	public void Restart ()

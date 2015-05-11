@@ -1,0 +1,573 @@
+fileFormatVersion: 2
+guid: 8171e8115674729499e3223c0dcd51e5
+timeCreated: 1430986689
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: boss4Table_0
+    21300002: boss4Table_1
+    21300004: boss4Table_2
+    21300006: boss4Table_3
+    21300008: boss4Table_4
+    21300010: boss4Table_5
+    21300012: boss4Table_6
+    21300014: boss4Table_7
+    21300016: boss4Table_8
+    21300018: boss4Table_9
+    21300020: boss4Table_10
+    21300022: boss4Table_11
+    21300024: boss4Table_12
+    21300026: boss4Table_13
+    21300028: boss4Table_14
+    21300030: boss4Table_15
+    21300032: boss4Table_16
+    21300034: boss4Table_17
+    21300036: boss4Table_19
+    21300038: boss4Table_21
+    21300040: boss4Table_22
+    21300042: boss4Table_26
+    21300044: boss4Table_45
+    21300046: boss4Table_47
+    21300048: boss4Table_49
+    21300050: boss4Table_50
+    21300052: boss4Table_51
+    21300054: boss4Table_52
+    21300056: boss4Table_54
+    21300058: boss4Table_55
+    21300060: boss4Table_57
+    21300062: boss4Table_59
+    21300064: boss4Table_60
+    21300066: boss4Table_61
+    21300068: boss4Table_62
+    21300070: boss4Table_63
+    21300072: boss4Table_64
+    21300074: boss4Table_65
+    21300076: boss4Table_66
+    21300078: boss4Table_67
+    21300080: boss4Table_68
+    21300082: boss4Table_69
+    21300084: boss4Table_18
+    21300086: boss4Table_23
+    21300088: boss4Table_24
+    21300090: boss4Table_25
+    21300092: boss4Table_27
+    21300094: boss4Table_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: boss4Table_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 917
+        width: 121
+        height: 97
+      alignment: 9
+      pivot: {x: .394750804, y: .514735878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 917
+        width: 122
+        height: 97
+      alignment: 9
+      pivot: {x: .39292106, y: .505435884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 917
+        width: 123
+        height: 96
+      alignment: 9
+      pivot: {x: .403607637, y: .511227906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_3
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 917
+        width: 122
+        height: 95
+      alignment: 9
+      pivot: {x: .385527313, y: .509373724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_4
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 917
+        width: 121
+        height: 94
+      alignment: 9
+      pivot: {x: .389130384, y: .515328944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_5
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 917
+        width: 120
+        height: 95
+      alignment: 9
+      pivot: {x: .402854919, y: .524541259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_6
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 917
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: .398557037, y: .520502746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_7
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 781
+        width: 121
+        height: 96
+      alignment: 9
+      pivot: {x: .415375948, y: .505613983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_8
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 781
+        width: 119
+        height: 97
+      alignment: 9
+      pivot: {x: .427539855, y: .522223711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_9
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 781
+        width: 111
+        height: 97
+      alignment: 9
+      pivot: {x: .445198417, y: .522569776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_10
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 781
+        width: 104
+        height: 96
+      alignment: 9
+      pivot: {x: .472273886, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_11
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 781
+        width: 109
+        height: 96
+      alignment: 9
+      pivot: {x: .450308979, y: .521156967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_12
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 781
+        width: 111
+        height: 97
+      alignment: 9
+      pivot: {x: .445104659, y: .513959408}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_13
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 781
+        width: 118
+        height: 96
+      alignment: 9
+      pivot: {x: .421689302, y: .520626724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_14
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 781
+        width: 124
+        height: 96
+      alignment: 9
+      pivot: {x: .398278028, y: .508759797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_15
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 657
+        width: 127
+        height: 101
+      alignment: 9
+      pivot: {x: .434610665, y: .496954888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_16
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 526
+        width: 185
+        height: 114
+      alignment: 9
+      pivot: {x: .538807154, y: .416031688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_17
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 525
+        width: 204
+        height: 119
+      alignment: 9
+      pivot: {x: .575413108, y: .405195475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_19
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 525
+        width: 199
+        height: 125
+      alignment: 9
+      pivot: {x: .568718255, y: .423420906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_21
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 525
+        width: 151
+        height: 128
+      alignment: 9
+      pivot: {x: .461511463, y: .393165112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_22
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 520
+        width: 121
+        height: 99
+      alignment: 9
+      pivot: {x: .423714757, y: .531079829}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_26
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 525
+        width: 122
+        height: 98
+      alignment: 9
+      pivot: {x: .424340427, y: .520931304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_45
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 365
+        width: 145
+        height: 109
+      alignment: 9
+      pivot: {x: .431639373, y: .492626518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_47
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 365
+        width: 147
+        height: 111
+      alignment: 9
+      pivot: {x: .441681951, y: .468624622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_49
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 365
+        width: 139
+        height: 93
+      alignment: 9
+      pivot: {x: .480965167, y: .503793716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_50
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 365
+        width: 134
+        height: 92
+      alignment: 9
+      pivot: {x: .450283676, y: .504388869}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_51
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 365
+        width: 116
+        height: 92
+      alignment: 9
+      pivot: {x: .386836082, y: .50582391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_52
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 365
+        width: 113
+        height: 92
+      alignment: 9
+      pivot: {x: .355382323, y: .497088224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_54
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 365
+        width: 131
+        height: 100
+      alignment: 9
+      pivot: {x: .446828604, y: .518752754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_55
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 365
+        width: 122
+        height: 98
+      alignment: 9
+      pivot: {x: .412502587, y: .522280633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_59
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 269
+        width: 88
+        height: 32
+      alignment: 9
+      pivot: {x: .347871512, y: .469573975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_60
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 269
+        width: 87
+        height: 44
+      alignment: 9
+      pivot: {x: .343325377, y: .455744654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_61
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 269
+        width: 91
+        height: 59
+      alignment: 9
+      pivot: {x: .350212008, y: .487623304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_62
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 137
+        width: 76
+        height: 87
+      alignment: 9
+      pivot: {x: .537217915, y: .291920096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_63
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 137
+        width: 105
+        height: 104
+      alignment: 9
+      pivot: {x: .570040584, y: .313240945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_64
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 15
+        width: 127
+        height: 101
+      alignment: 9
+      pivot: {x: .441912979, y: .487473428}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_65
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 15
+        width: 135
+        height: 101
+      alignment: 9
+      pivot: {x: .45785749, y: .489145488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_66
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 16
+        width: 144
+        height: 97
+      alignment: 9
+      pivot: {x: .485544622, y: .492093831}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_67
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 15
+        width: 119
+        height: 94
+      alignment: 9
+      pivot: {x: .378406674, y: .502052784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_68
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 15
+        width: 119
+        height: 94
+      alignment: 9
+      pivot: {x: .385095417, y: .509445488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_69
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 15
+        width: 119
+        height: 88
+      alignment: 9
+      pivot: {x: .423894286, y: .477802634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 517
+        width: 125
+        height: 112
+      alignment: 9
+      pivot: {x: .396071047, y: .509157479}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 358
+        width: 150
+        height: 107
+      alignment: 9
+      pivot: {x: .510820091, y: .532865703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_24
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 365
+        width: 148
+        height: 97
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_25
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 363
+        width: 160
+        height: 115
+      alignment: 9
+      pivot: {x: .443071753, y: .469715953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_27
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 522
+        width: 164
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss4Table_20
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 529
+        width: 172
+        height: 108
+      alignment: 9
+      pivot: {x: .511925995, y: .452518046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -168,9 +168,9 @@ public class LevelManager : MonoBehaviour
 		ManageLevels ();
 		//DEBUG
 		if (Input.GetKeyDown ("q")) {
-			currentLevel++;
+			IncrementLevel ();
 		}
-		if (Input.GetKeyDown ("o") || Input.GetKeyDown(KeyCode.Escape)) {
+		if (Input.GetKeyDown ("o") || Input.GetKeyDown (KeyCode.Escape)) {
 
 			StateManager.PauseGame ();
 		}
@@ -179,11 +179,25 @@ public class LevelManager : MonoBehaviour
 
 	void ManageLevels ()
 	{
-		int score = tracker.getCurrentKillCount ();
-
-		if (score >= threshold) {
+		int killCount = tracker.getCurrentKillCount ();
+		if (killCount >= threshold) {
 			currentLevel++;
-			threshold = threshold + currentLevel + 1;
+			//threshold = threshold + currentLevel + 1;
+			if (currentLevel > 0 && currentLevel <= 5) {
+				threshold = 5;
+			}
+			if (currentLevel > 5 && currentLevel <= 10) {
+				threshold = 7;
+			}
+			if (currentLevel > 10 && currentLevel <= 20) {
+				threshold = 10;
+			}
+			if (currentLevel > 20 && currentLevel <= 40) {
+				threshold = 20;
+			}
+			if (currentLevel > 40 && currentLevel <= 60) {
+				threshold = 30;
+			}
 			tracker.setThreshold (threshold);
 		}
 
@@ -449,7 +463,7 @@ public class LevelManager : MonoBehaviour
 			sniperRate = 0;
 			tracker.setLevel (currentLevel);
 
-			am.playTrack (1);
+			am.playTrack (2);
 			break;
 
 		case 22:
@@ -1096,7 +1110,22 @@ public class LevelManager : MonoBehaviour
 	public void IncrementLevel ()
 	{
 		currentLevel++;
-		threshold = currentLevel + 1;
+		//threshold = currentLevel + 1;
+		if (currentLevel > 0 && currentLevel <= 5) {
+			threshold = 5;
+		}
+		if (currentLevel > 5 && currentLevel <= 10) {
+			threshold = 7;
+		}
+		if (currentLevel > 10 && currentLevel <= 20) {
+			threshold = 10;
+		}
+		if (currentLevel > 20 && currentLevel <= 40) {
+			threshold = 20;
+		}
+		if (currentLevel > 40 && currentLevel <= 60) {
+			threshold = 30;
+		}
 		tracker.setThreshold (threshold);
 	}
 
