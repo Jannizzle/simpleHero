@@ -41,6 +41,9 @@ public class HeroManager : MonoBehaviour
 	public void receiveDamage (int dmg)
 	{
 		hp -= dmg;
+		if (hp < 0) {
+			hp = 0;
+		}
 		gui.updateHP (hp, maxHp);
 	}
 

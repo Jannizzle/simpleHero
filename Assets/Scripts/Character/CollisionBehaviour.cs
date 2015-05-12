@@ -31,6 +31,7 @@ public class CollisionBehaviour : MonoBehaviour
 	Animator animator;
 	//Hero
 	HeroManager hero;
+	MovementController movement;
 	//SFX
 	SoundManager sfx;
 
@@ -40,6 +41,7 @@ public class CollisionBehaviour : MonoBehaviour
 		GameObject tmp = GameObject.FindGameObjectWithTag ("MainCamera");
 		scoreTracking = tmp.GetComponent<ScoreTracking> ();
 		hero = GameObject.FindGameObjectWithTag ("Hero").GetComponent<HeroManager> ();
+		movement = GameObject.FindGameObjectWithTag ("Hero").GetComponent<MovementController> ();
 		mat = gameObject.GetComponent<Renderer> ().material;
 		sfx = tmp.GetComponentInChildren<SoundManager> ();
 		animator = gameObject.GetComponentInChildren<Animator> ();
@@ -69,7 +71,7 @@ public class CollisionBehaviour : MonoBehaviour
 
 	}
 
-	public void receiveDamage (int dmg, bool instaDeath)
+	public void receiveDamage (int dmg, bool instaDeath, bool recovery)
 	{
 		scoreTracking.resetMultiplier ();
 
@@ -79,7 +81,7 @@ public class CollisionBehaviour : MonoBehaviour
 		} else if (!HeroManager.invincible && !recovering) {
 			hero.receiveDamage (dmg);
 			CheckDeath ();
-			if (hero.getHp () >= 1) {
+			if (hero.getHp () >= 1 && recovery) {
 				StartCoroutine ("recoveryRoutine");
 			}
             
@@ -93,7 +95,7 @@ public class CollisionBehaviour : MonoBehaviour
 
 	void KillHeal ()
 	{
-		hero.AddHealth (5);
+		hero.AddHealth (1);
 	}
 
 	void KillEnemy (Collider2D other)
@@ -126,7 +128,7 @@ public class CollisionBehaviour : MonoBehaviour
 				KillEnemy (other);
 			} else if (!HeroManager.invincible && !recovering) {
 				other.SendMessage ("DestroyThis", SendMessageOptions.DontRequireReceiver);
-				receiveDamage (villainDmg, false);
+				receiveDamage (villainDmg, false, true);
 
 			}
 
@@ -139,7 +141,7 @@ public class CollisionBehaviour : MonoBehaviour
 				m.DestroyThis ();
 				KillEnemyParent ();
 			} else if (!HeroManager.invincible && !recovering) {
-				receiveDamage (mimeDmg, false);
+				receiveDamage (mimeDmg, false, true);
 				
 			}
 		}
@@ -154,7 +156,7 @@ public class CollisionBehaviour : MonoBehaviour
 			case 1:
 				//WindUP
 				g.setState (3);
-				receiveDamage (guardianDmg, false);
+				receiveDamage (guardianDmg, false, true);
 				break;
 			case 2:
 				//PreaparingAttack
@@ -166,28 +168,32 @@ public class CollisionBehaviour : MonoBehaviour
 				break;
 			case 4:
 				//AfterAttack
-				receiveDamage (guardianDmg, false);
+				receiveDamage (guardianDmg, false, true);
 				break;
 
 			}
 		}
 
 		if ((other.gameObject.tag == "Bullet" || other.gameObject.tag == "Aimer")) {
-			receiveDamage (bulletDmg, false);
+			receiveDamage (bulletDmg, false, true);
 			//other.SendMessage("DestroyThis", SendMessageOptions.DontRequireReceiver);
 		}
 
 		if (other.gameObject.tag == "Boarder") {
-			StopCoroutine ("recoveryRoutine");
-			mat.color = defaultColor;
-			recovering = false;
-			//SetHp to 0
-			receiveDamage (hero.getHp (), true);
+
+//			StopCoroutine ("recoveryRoutine");
+//			mat.color = defaultColor;
+//			recovering = false;
+//			//SetHp to 0
+//			receiveDamage (hero.getHp (), true);
+			receiveDamage (33, false, false);
+			movement.KnockBack ();
+
 		}
 
 		//BOSS
 		if (other.gameObject.tag == "BossWeapon") {
-			receiveDamage (bulletDmg, false);
+			receiveDamage (bulletDmg, false, true);
 		}
 
 		if (other.gameObject.tag == "BossSweetspot") {
@@ -203,7 +209,7 @@ public class CollisionBehaviour : MonoBehaviour
 				other.SendMessage ("Ripost", SendMessageOptions.DontRequireReceiver);
 			} else if (!HeroManager.invincible && !recovering) {
 				other.SendMessage ("DestroyThis", SendMessageOptions.DontRequireReceiver);
-				receiveDamage (bulletDmg, false);
+				receiveDamage (bulletDmg, false, true);
 			}
 		}
 
@@ -215,7 +221,7 @@ public class CollisionBehaviour : MonoBehaviour
 
 		if (other.gameObject.tag == "Illusion") {
 			other.SendMessage ("Explode", SendMessageOptions.DontRequireReceiver);
-			receiveDamage (20, false);
+			receiveDamage (20, false, true);
 		}
 	}
 

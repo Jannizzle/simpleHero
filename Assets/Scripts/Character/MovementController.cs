@@ -13,6 +13,7 @@ public class MovementController : MonoBehaviour
 	Button inputButton;
 	bool performingAttack;
 	Animator animator;
+	Rigidbody2D rigidBody;
 
 	// Use this for initialization
 	void Start ()
@@ -28,6 +29,7 @@ public class MovementController : MonoBehaviour
 		inputButton.bindHero ();
 
 		animator = gameObject.GetComponentInChildren<Animator> ();
+		rigidBody = gameObject.GetComponent<Rigidbody2D> ();
 
 	}
 	// Update is called once per frame
@@ -66,10 +68,9 @@ public class MovementController : MonoBehaviour
         
 	}
 
-	public void knockBack ()
+	public void KnockBack ()
 	{
-
-		Debug.Log ("OUCH");
+		rigidBody.velocity = rigidBody.velocity * -0.7f;
 	}
 
 	public void Attack ()
