@@ -30,7 +30,6 @@ public class MyGUI : MonoBehaviour
 		hero = GameObject.Find ("NewHero").GetComponent<HeroManager> ();
 		orignalSize = hpFull.rectTransform.localScale.x;
 		//scale = 1.0f;
-
 		//updateHP (hero.getHp ());
 		//hpPos = new Vector2 (Screen.width / 8, Screen.width / 8);
 		//	hpSize = new Vector2 (Screen.width / 2, Screen.width / 16);
@@ -47,9 +46,9 @@ public class MyGUI : MonoBehaviour
 		sec = (int)rawSec % 60;
 		clockText.text = string.Format ("{0:00}:{1:00}", min, sec);
 
-		if (StateManager.gamePaused) {
+		if (StateManager.gamePaused && Application.loadedLevelName == "Level1") {
 			pauseText.SetActive (true);
-		} else if (pauseText.activeInHierarchy) {
+		} else if (pauseText.activeInHierarchy && Application.loadedLevelName == "Level1") {
 			pauseText.SetActive (false);
 		}
 

@@ -25,7 +25,11 @@ public class ScoreTracking : MonoBehaviour
 		currentLevel = 1;
 		multiplier = 1.0f;
 		threshold = 2;
-		pm = GameObject.FindGameObjectWithTag ("Camera2").GetComponent<ParallaxManager> ();
+		GameObject tmp = GameObject.FindGameObjectWithTag ("Camera2");
+		if(tmp != null)
+		pm = tmp.GetComponent<ParallaxManager> ();
+
+
 	}
 	
 	// Update is called once per frame

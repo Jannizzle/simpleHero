@@ -16,7 +16,9 @@ public class EffectBox : MonoBehaviour
         GameObject tmp = GameObject.FindGameObjectWithTag("Button");
         aButton = tmp.GetComponent<Button>();
         GameObject tmp2 = GameObject.FindGameObjectWithTag("Camera2");
-        camera2 = tmp2.GetComponent<Camera>();
+		if (tmp2 != null) {
+			camera2 = tmp2.GetComponent<Camera> ();
+		}
     }
 
     // Update is called once per frame
