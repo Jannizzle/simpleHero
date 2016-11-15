@@ -76,12 +76,12 @@ public class CollisionBehaviour : MonoBehaviour
 		scoreTracking.resetMultiplier ();
 
 		if (instaDeath) {
-			hero.receiveDamage (dmg);
+			hero.ReceiveDamage(dmg);
 			CheckDeath ();
 		} else if (!HeroManager.invincible && !recovering) {
-			hero.receiveDamage (dmg);
+			hero.ReceiveDamage (dmg);
 			CheckDeath ();
-			if (hero.getHp () >= 1 && recovery) {
+			if (hero.GetHp () >= 1 && recovery) {
 				StartCoroutine ("recoveryRoutine");
 			}
             
@@ -279,7 +279,7 @@ public class CollisionBehaviour : MonoBehaviour
 
 	void CheckDeath ()
 	{
-		if (hero.getHp () <= 0.01) {
+		if (hero.GetHp () <= 0.01) {
 
 			hero.Death ();
 			StateManager.dead = true;
