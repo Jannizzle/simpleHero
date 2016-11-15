@@ -22,23 +22,23 @@ public class HeroManager : MonoBehaviour
 
 	}
 
-	public void setHp (int value)
+	public void SetHp (int value)
 	{
 		hp = value;
 		gui.updateHP (hp, maxHp);
 	}
 
-	public int getHp ()
+	public int GetHp ()
 	{
 		return hp;
 	}
 
-	public int getMaxHp ()
+	public int GetMaxHp ()
 	{
 		return maxHp;
 	}
 
-	public void receiveDamage (int dmg)
+	public void ReceiveDamage (int dmg)
 	{
 		hp -= dmg;
 		if (hp < 0) {
