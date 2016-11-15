@@ -34,14 +34,33 @@ public class DebugMenu : MonoBehaviour
         hm = GameObject.Find("NewHero").GetComponent<HeroManager>();
     }
 
+    void OnEnable()
+    {
+        StateManager.PauseGame();
+    }
+
+
+    public void ToggleDebugMenu()
+    {
+        Debug.Log("ToggleReached");
+        if (gameObject.active = true)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
+    }
+
     /// <summary>
     /// DEBUG: Spawns an Enemy enemy at the defined position posY.
     /// </summary>
     /// <param name="enemy">Enemy to spawn</param>
     /// <param name="posY">Where to spawn within SPAWN_RANGE. Define between 0 and 1</param>
-    public void DebugSpawnEnemy(GameObject enemy, float posY)
+    public void DebugSpawnEnemy(GameObject enemy)
     {
-        Instantiate(enemy, new Vector3(10.0f, (posY * StaticsConfig.SPAWN_RANGE_Y) - StaticsConfig.SPAWN_RANGE_Y / 2, 0), Quaternion.identity);
+        Instantiate(enemy, new Vector3(10.0f, (0.5f * StaticsConfig.SPAWN_RANGE_Y) - StaticsConfig.SPAWN_RANGE_Y / 2, 0), Quaternion.identity);
     }
 
     /// <summary>
